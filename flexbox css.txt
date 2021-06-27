@@ -1,0 +1,83 @@
+App.js
+________________________________
+import React from 'react';
+import './App.css';
+
+const App = () => {
+
+  return (
+    <>
+      <section>
+        <div className="one">
+          1. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+        </div>
+        <div className="two">
+          2. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+        </div>
+        <div className="three">
+          3. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+        </div>
+      </section>
+    </>
+  )
+}
+
+export default App
+
+____________________________________________________________________________
+
+App.css
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+}
+
+section {
+    width: 100%;
+    /* background: cyan;  */ 
+    color: #000;
+    
+}
+
+section div {
+    /* width: 30%;  flex basis is more responsive than width*/
+    flex-basis: 30%; 
+    padding: 20px;
+    border: 1px solid #000;
+}
+
+.one { 
+  /* flex: 2; */
+  background-color: brown;
+}
+.two {
+  /* flex: 1; */
+  background-color: burlywood;
+ }
+.three {
+  /* flex: 2;  */
+  background-color: chartreuse;
+} 
+
+@media(min-width: 769px) {
+  section {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+}
